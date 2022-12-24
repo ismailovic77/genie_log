@@ -46,6 +46,7 @@ public class Db_services {
 	  }
 	}
 	
+	/* 
 	public static ArrayList<Map<String, String>> get_jobs() throws SQLException {
 		java.sql.Connection con = Db_services.connect();
 		ArrayList<Map<String, String>> jobs_array = new ArrayList<Map<String, String>>();
@@ -110,4 +111,5 @@ public class Db_services {
 		}
 		
 	} 
+	*/
 }
