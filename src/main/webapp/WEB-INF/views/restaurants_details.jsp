@@ -116,7 +116,21 @@
                 <i class="far fa-star"></i>
             </div>
         </div>
-
+        <div class="box">
+            <!-- <span class="price"> </span>-->
+            <!-- <img src="images/p-6.jpg" alt="">-->
+             <c:if test="${ !empty note }"><p><c:out value="${ note }" /></p></c:if>
+             <form method="post" action="comment">
+            <h3>add comment to our restaurant</h3><br>
+            <textarea id="commentaire" name="commentaire" rows="5" cols="33"> </textarea>         
+         
+            <br><br>
+            <h3>add note</h3>
+            <input  type="text" id="note" name="note" />
+            <br><br>
+            <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 </section>
