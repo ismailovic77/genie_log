@@ -1,0 +1,5 @@
+database_service/RateTable.class
+model/Resturant.class
+model/Comment.class
+model/Rate.class
+database_service/CommentTable.class

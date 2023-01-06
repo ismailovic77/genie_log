@@ -116,7 +116,23 @@
                 <i class="far fa-star"></i>
             </div>
         </div>
-
+        <div class="box">
+            <c:if test="${ !empty note }">
+                <p>
+                    <c:out value="${ note }" />
+                </p>
+            </c:if>
+            <form method="post" action="">
+            <h3>add comment to our restaurant</h3><br>
+            <textarea id="commentaire" name="commentaire" rows="5" cols="33"> </textarea>         
+         
+            <br><br>
+            <h3>add note</h3>
+            <input  type="text" id="note" name="note" />
+            <br><br>
+            <input class="btn" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 </section>
@@ -177,6 +193,38 @@
 </section>
 
 <!-- review section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>Contact Us</span> now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="assets/images/order-img.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+
+            <textarea placeholder="Leave your comment here" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- order section ends -->
 
 
 
