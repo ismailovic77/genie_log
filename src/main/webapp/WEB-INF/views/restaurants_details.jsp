@@ -122,11 +122,11 @@
              <c:if test="${ !empty note }"><p><c:out value="${ note }" /></p></c:if>
              <form method="post" action="">
             <h3>add comment to our restaurant</h3><br>
-            <textarea id="commentaire" name="commentaire" rows="5" cols="33"> </textarea>         
+            <textarea placeholder="Leave us your feedback here" id="commentaire" name="commentaire" rows="5" cols="33" style="width: 70%; padding: 12px 20px; border: 2px solid #ccc; border-radius: 4px; background-color: #f8f8f8; resize: none;"> </textarea>         
          
             <br><br>
             <h3>add note</h3>
-            <input  type="text" id="note" name="note" />
+            <input  type="number" min="1" max="5" id="note" name="note" style=" border: 2px solid #ccc; border-radius: 4px; background-color: #f8f8f8; resize: none;" />
             <br><br>
             <input class="btn" type="submit" value="Submit">
             </form>
